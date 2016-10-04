@@ -12,6 +12,7 @@
 		823D67AC1DA2456D009E9FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D67AA1DA2456D009E9FE3 /* Main.storyboard */; };
 		823D67AE1DA2456D009E9FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823D67AD1DA2456D009E9FE3 /* Assets.xcassets */; };
 		823D67B11DA2456D009E9FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D67AF1DA2456D009E9FE3 /* LaunchScreen.storyboard */; };
+		826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		823D67AD1DA2456D009E9FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		823D67B01DA2456D009E9FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		823D67B21DA2456D009E9FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingCellsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				823D67AD1DA2456D009E9FE3 /* Assets.xcassets */,
 				823D67AF1DA2456D009E9FE3 /* LaunchScreen.storyboard */,
 				823D67B21DA2456D009E9FE3 /* Info.plist */,
+				826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */,
 			);
 			path = MoreTables;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */,
 				823D67A91DA2456D009E9FE3 /* ViewController.swift in Sources */,
 				823D67A71DA2456D009E9FE3 /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				823D67B71DA2456D009E9FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
