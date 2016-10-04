@@ -13,6 +13,8 @@
 		823D67AE1DA2456D009E9FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823D67AD1DA2456D009E9FE3 /* Assets.xcassets */; };
 		823D67B11DA2456D009E9FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823D67AF1DA2456D009E9FE3 /* LaunchScreen.storyboard */; };
 		826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */; };
+		826191D91DA3AE7C00E3D80A /* DeleteCellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */; };
+		826191DB1DA3AF6100E3D80A /* computers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826191DA1DA3AF6100E3D80A /* computers.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		823D67B01DA2456D009E9FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		823D67B21DA2456D009E9FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingCellsTableViewController.swift; sourceTree = "<group>"; };
+		826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteCellsTableViewController.swift; sourceTree = "<group>"; };
+		826191DA1DA3AF6100E3D80A /* computers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		823D67A51DA2456D009E9FE3 /* MoreTables */ = {
 			isa = PBXGroup;
 			children = (
+				826191DA1DA3AF6100E3D80A /* computers.plist */,
 				823D67A61DA2456D009E9FE3 /* AppDelegate.swift */,
 				823D67A81DA2456D009E9FE3 /* ViewController.swift */,
 				823D67AA1DA2456D009E9FE3 /* Main.storyboard */,
+				826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */,
 				823D67AD1DA2456D009E9FE3 /* Assets.xcassets */,
 				823D67AF1DA2456D009E9FE3 /* LaunchScreen.storyboard */,
 				823D67B21DA2456D009E9FE3 /* Info.plist */,
@@ -129,6 +135,7 @@
 				823D67B11DA2456D009E9FE3 /* LaunchScreen.storyboard in Resources */,
 				823D67AE1DA2456D009E9FE3 /* Assets.xcassets in Resources */,
 				823D67AC1DA2456D009E9FE3 /* Main.storyboard in Resources */,
+				826191DB1DA3AF6100E3D80A /* computers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826191D91DA3AE7C00E3D80A /* DeleteCellsTableViewController.swift in Sources */,
 				826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */,
 				823D67A91DA2456D009E9FE3 /* ViewController.swift in Sources */,
 				823D67A71DA2456D009E9FE3 /* AppDelegate.swift in Sources */,
