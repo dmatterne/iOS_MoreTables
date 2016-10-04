@@ -15,6 +15,7 @@
 		826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */; };
 		826191D91DA3AE7C00E3D80A /* DeleteCellsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */; };
 		826191DB1DA3AF6100E3D80A /* computers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 826191DA1DA3AF6100E3D80A /* computers.plist */; };
+		826191DD1DA3B20D00E3D80A /* CheckMarkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826191DC1DA3B20D00E3D80A /* CheckMarkTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		826191D61DA399EC00E3D80A /* MovingCellsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingCellsTableViewController.swift; sourceTree = "<group>"; };
 		826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteCellsTableViewController.swift; sourceTree = "<group>"; };
 		826191DA1DA3AF6100E3D80A /* computers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
+		826191DC1DA3B20D00E3D80A /* CheckMarkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMarkTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				823D67A61DA2456D009E9FE3 /* AppDelegate.swift */,
 				823D67A81DA2456D009E9FE3 /* ViewController.swift */,
 				823D67AA1DA2456D009E9FE3 /* Main.storyboard */,
+				826191DC1DA3B20D00E3D80A /* CheckMarkTableViewController.swift */,
 				826191D81DA3AE7B00E3D80A /* DeleteCellsTableViewController.swift */,
 				823D67AD1DA2456D009E9FE3 /* Assets.xcassets */,
 				823D67AF1DA2456D009E9FE3 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				826191D91DA3AE7C00E3D80A /* DeleteCellsTableViewController.swift in Sources */,
 				826191D71DA399ED00E3D80A /* MovingCellsTableViewController.swift in Sources */,
+				826191DD1DA3B20D00E3D80A /* CheckMarkTableViewController.swift in Sources */,
 				823D67A91DA2456D009E9FE3 /* ViewController.swift in Sources */,
 				823D67A71DA2456D009E9FE3 /* AppDelegate.swift in Sources */,
 			);

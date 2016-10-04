@@ -1,5 +1,5 @@
 //
-//  DeleteCellsTableViewController.swift
+//  CheckMarkTableViewController.swift
 //  MoreTables
 //
 //  Created by Stannis Baratheon on 04/10/16.
@@ -8,46 +8,23 @@
 
 import UIKit
 
-class DeleteCellsTableViewController: UITableViewController {
-
+class CheckMarkTableViewController: UITableViewController {
     
     var myList: [String]!
+    var marks: [Bool]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myList = ["Arsenal", "Aston Villa" , "Burnley", "Chelsea" , "C Palace" , "Everton" , "Hull" , "Leicester" , "Liverpool" , "Manchester City" , "Manchester United" , "Newcastle" , "Queens Park Rangers" , "Southampton" , "Stoke" , "Sunderland" , "Swansea" , "Spurs" , "West Brom", "West Ham"]
+        
+        marks = [Bool] (repeating: false, count: myList.count)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        let path = Bundle.main.path(forResource: "computers", ofType: "plist")
-        myList = NSArray(contentsOfFile: path!) as! [String]
-        
-        let editButton = UIBarButtonItem(title: "Delete", style: .plain, target: self, action: #selector(DeleteCellsTableViewController.toggleEdit(_ :)))
-        navigationItem.rightBarButtonItem = editButton
-        
-    }
-    
-    @IBAction func toggleEdit(_ sender: AnyObject) {
-    
-        tableView.setEditing(!tableView.isEditing, animated: true)
-        
-        if tableView.isEditing {
-        
-            navigationItem.rightBarButtonItem?.title = "Done"
-            
-        } else {
-            
-            navigationItem.rightBarButtonItem?.title = "Delete"
-        
-        
-        }
-        
-        
-        
-    
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,16 +46,37 @@ class DeleteCellsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "deleteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "checkMarkCell", for: indexPath)
 
         cell.textLabel?.text = myList[indexPath.row]
         
-      
+        if marks[indexPath.row]
+        {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none }
+        
+        // Configure the cell...
 
         return cell
     }
-    
+ 
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if marks[indexPath.row] {
+        
+            let newCell = tableView.cellForRow(at: indexPath)
+            newCell?.accessoryType = .none
+        
+        } else {
+            let newCell2 = tableView.cellForRow(at: indexPath)
+            newCell2?.accessoryType = .checkmark
+        
+        }
+        
+        marks[indexPath.row] = !marks[indexPath.row]
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -87,18 +85,17 @@ class DeleteCellsTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            myList.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
- 
+    */
 
     /*
     // Override to support rearranging the table view.
